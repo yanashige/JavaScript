@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<tittle>Practice of JavaScript</title>
+</head>
+<body>
+	<script src="myscript.js"></script>
+	<script>
+	//コメント
+	 console.log("hello world");
+	 console.log("hello world!!"
+	 var msg;
+	 msg = "hello world! msg;"
+	 var s;
+	 s="good!" + "luck!";
+	  x=20*2;
+	  y=10;
+	 console.log(msg);
+	 console.log(x+y);
+	 console.log(s);
+	var score =80;
+		if(score > 60){
+			console.log("OK!");
+		}else{console.log("NG!");}	
+		
+	var signal = "green";
+	
+	switch (signal){
+	case "red":
+		console.log("stop!");
+		break;
+	case "green":
+		console.log("go!");
+		break;
+	case "yellow":
+		console.log("slow down!");
+		break;
+	default:
+		console.log("wrong signal");
+		break;
+	}
+
+	/*	while
+	do ... while
+	*/
+	
+	var i = 0;
+	while(i < 10){
+	
+		console.log(i);
+		i++;
+	}
+
+	var j = 200;
+	do {
+		console.log(j);
+		j++
+		}while(j <10);
+		
+	
+	for (var t =0; t<10; t++){
+	if (t===5){
+	continue;
+	//break;
+	}
+	console.log(t);
+	}
+	
+	alert("hello");
+	
+	var answer = confirm("are you sure?");
+	console.log(answer);
+	
+	var name = prompt("What is your name？","no name");
+	console.log(name);
+
+	function hello(name){
+	 console.log("hello " + name);
+	}
+	hello("Tom");
+	hello("Bob");
+	
+	
+	function red(color){
+	 var msg ="red" + color
+	 }
+	
+	/* 即時関数 
+	
+	(function hello(name){
+	 console.log("hello " + name);
+	}}();
+	
+	*/
+	
+	/*
+	タイマー処理	
+	*/
+
+	var x = 0;
+	function show(){
+		console.log(x++);
+		/*setInterval*/
+		var tid = setTimeout(function(){
+			show();
+			}, 1000);
+			if (x > 5){
+				clearTimeout(tid);
+				}
+				}
+				show();
+	
+</script>
+</body>
+</html>
